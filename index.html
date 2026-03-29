@@ -1,1462 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBN4LR1Q23"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-RBN4LR1Q23');
-    </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="theme-color" content="#000000">
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>fotofolio — Websites for Photographers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame-D Photography | Bold Editorial & Luxury Portraiture</title>
+    <meta name="description" content="Madame D Photography specializes in bold editorial portraits, steampunk, fantasy, and conceptual photography. Featured in ENVYD Magazine. Book your creative session today and bring your imaginative vision to life.">
+    <meta name="keywords" content="editorial photography, creative portraits, steampunk photography, fantasy photography, conceptual photography, Madame D Photography, artistic portraits, magazine photography">
+    <link rel="canonical" href="https://madamedphotography.com/">
+    <meta name="last-modified" content="2025-01-01">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Madame-D Photography | Bold Editorial & Luxury Portraits">
+    <meta property="og:description" content="Where imagination meets the lens. Specializing in luxury editorial, bridal, and lifestyle photography.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madamedphotography.com/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Madame D Photography | Bold Editorial & Creative Portraits">
+    <meta name="twitter:description" content="Where imagination meets the lens. Specializing in editorial, steampunk, and fantasy photography.">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Sometype+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    },
+                    colors: {
+                        'dark-bg': '#262626',
+                        'dark-bg-secondary': '#1d1d1d',
+                        'dark-bg-tertiary': '#333333',
+                        'brand-terracotta': '#7A412D',
+                        'brand-beige': '#D7C7B9',
+                        'brand-cream': '#F5F5F0',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --white: #FFFFFF;
-            --black: #000000;
-            --gray-light: #fbfbfb;
-            --gray-medium: #e5e5e5;
-            --gray-dark: #666666;
-            --accent: #000000;
-            --bg-dark: #0a0a0a;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--black);
-            background-color: var(--white);
-            line-height: 1.625;
-            overflow-x: hidden;
-            letter-spacing: -0.01em;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 500;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        .mono {
-            font-family: 'Sometype Mono', monospace;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 0 4rem;
-        }
-
-        section {
-            padding: 10rem 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 5rem;
-            font-size: 3.5rem;
-            font-weight: 400;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--black);
-            color: white;
-            padding: 1.25rem 2.5rem;
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            border: 1px solid var(--black);
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .btn:hover {
-            background-color: transparent;
-            color: var(--black);
-            transform: translateY(-2px);
-        }
-
-        /* Navigation */
-        nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 2.5rem 4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 500;
-        }
-
-        .menu-trigger {
-            display: none;
-        }
-
-        @media (max-width: 1024px) {
-            nav {
-                padding: 2.25rem 2rem;
-                justify-content: space-between;
-                text-align: left;
-            }
-
-            .nav-links {
-                display: none !important;
-            }
-
-            .menu-trigger {
-                display: block !important;
-                background: none;
-                border: none;
-                color: #ffffff !important;
-                font-family: 'Sometype Mono', monospace;
-                font-size: 0.9rem;
-                letter-spacing: 0.25em;
-                cursor: pointer;
-                padding: 0.5rem;
-                margin-right: -0.5rem;
-                visibility: visible !important;
-                opacity: 1 !important;
-            }
-
-            .logo {
-                font-size: 1.35rem;
-            }
-        }
-
-        /* Mobile Menu Overlay */
-        .mobile-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--black);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2.5rem;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .mobile-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .overlay-close {
-            position: absolute;
-            top: 2.5rem;
-            right: 2rem;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-family: 'Sometype Mono', monospace;
-            font-size: 0.85rem;
-            letter-spacing: 0.2em;
-            cursor: pointer;
-        }
-
-        .overlay-link {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--white);
-            text-decoration: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .overlay-link:hover {
-            opacity: 0.5;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--white);
-            text-decoration: none;
-            letter-spacing: -0.02em;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--white);
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            background-color: var(--bg-dark);
-            color: var(--white);
-        }
-
-        .hero-animation-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            overflow: hidden;
-            opacity: 0.4;
-        }
-
-        .morph-shape {
-            position: absolute;
-            background: linear-gradient(45deg, #1a1a1a, #000);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            opacity: 0.8;
-            filter: blur(80px);
-            animation: morph 25s infinite ease-in-out;
-        }
-
-        .morph-shape:nth-child(1) {
-            width: 600px;
-            height: 600px;
-            top: -10%;
-            left: -10%;
-        }
-
-        .morph-shape:nth-child(2) {
-            width: 500px;
-            height: 500px;
-            bottom: -15%;
-            right: -10%;
-            animation-delay: -5s;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 10;
-            max-width: 900px;
-            padding: 0;
-            background: transparent;
-            backdrop-filter: none;
-            -webkit-backdrop-filter: none;
-            border-radius: 0;
-            border: none;
-            box-shadow: none;
-            animation: content-slide-up 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .hero h1 {
-            font-size: 6rem;
-            margin-bottom: 2rem;
-            line-height: 1;
-            letter-spacing: -0.04em;
-            color: var(--white);
-            font-weight: 400;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 3.5rem;
-            max-width: 600px;
-            color: rgba(255, 255, 255, 0.6);
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            line-height: 1.5;
-        }
-
-        .hero .btn {
-            background-color: var(--white);
-            color: var(--black);
-            border-color: var(--white);
-        }
-
-        .hero .btn:hover {
-            background-color: transparent;
-            color: var(--white);
-        }
-
-        .hero-btns {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero-btns {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-
-        /* Value Proposition */
-        .value-props {
-            background-color: var(--white);
-        }
-
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-        }
-
-        .value-card {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .value-icon {
-            font-size: 3rem;
-            color: var(--lavender);
-            margin-bottom: 1.5rem;
-        }
-
-        .value-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Portfolio Showcase */
-        .portfolio {
-            background-color: var(--white);
-            border-top: 1px solid var(--gray-medium);
-            padding: 12rem 0;
-        }
-
-        .portfolio-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8rem;
-            align-items: center;
-        }
-
-        .portfolio-frame {
-            background-color: #000;
-            width: 320px;
-            max-width: 100%;
-            aspect-ratio: 9/18;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 40px;
-            border: 12px solid #111;
-            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .portfolio-frame:hover {
-            transform: translateY(-20px);
-        }
-
-        .frame-header {
-            display: none;
-            /* Hide desktop frame header in mobile view */
-        }
-
-        .frame-content {
-            height: 100%;
-            background-color: white;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .website-iframe {
-            width: calc(100% + 20px);
-            height: 100%;
-            border: none;
-            display: none;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .website-iframe::-webkit-scrollbar {
-            display: none;
-        }
-
-
-
-        .website-iframe.active {
-            display: block;
-        }
-
-        .iframe-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 5;
-            transition: opacity 0.5s ease;
-        }
-
-        .iframe-overlay.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .portfolio-info {
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
-
-        .portfolio-info h3 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            line-height: 1;
-        }
-
-        .portfolio-info p {
-            margin-bottom: 0;
-            color: var(--gray-dark);
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 1.6;
-        }
-
-        .portfolio-controls {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-
-        .portfolio-arrow {
-            width: 60px;
-            height: 60px;
-            border-radius: 0;
-            background-color: var(--black);
-            color: white;
-            border: 1px solid var(--black);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            transition: all 0.4s ease;
-        }
-
-        .portfolio-arrow:hover {
-            background-color: transparent;
-            color: var(--black);
-        }
-
-        .portfolio-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 0;
-            background-color: var(--gray-medium);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .portfolio-dot.active {
-            background-color: var(--black);
-            width: 30px;
-        }
-
-        /* Process Section */
-        .process {
-            background-color: var(--black);
-            color: var(--white);
-        }
-
-        .process .section-title {
-            color: var(--white);
-        }
-
-        .step-number {
-            font-size: 1rem;
-            font-family: 'Sometype Mono', monospace;
-            color: rgba(255, 255, 255, 0.4);
-            margin-bottom: 2rem;
-            display: block;
-        }
-
-        .process-step h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .process-step p {
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 300;
-        }
-
-        /* Testimonials */
-        .testimonial {
-            background-color: var(--gray-light);
-            padding: 4rem;
-            border-radius: 0;
-            box-shadow: none;
-            border: 1px solid var(--gray-medium);
-        }
-
-        /* Packages (Renamed from Services) */
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .package-card {
-            padding: 4rem;
-            border: 1px solid var(--gray-medium);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            transition: all 0.4s ease;
-        }
-
-        .package-card:hover {
-            border-color: var(--black);
-            transform: translateY(-10px);
-        }
-
-        .package-name {
-            font-family: 'Sometype Mono', monospace;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .package-price {
-            font-size: 3.5rem;
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 2rem;
-        }
-
-        .package-features {
-            list-style: none;
-            margin-bottom: 3rem;
-            flex-grow: 1;
-        }
-
-        .package-features li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--gray-medium);
-            font-size: 0.95rem;
-            color: var(--gray-dark);
-        }
-
-        .package-features li:last-child {
-            border-bottom: none;
-        }
-
-        /* CTA Section */
-        .cta {
-            background-color: var(--gray-light);
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-form {
-            max-width: 600px;
-            margin: 3rem auto 0;
-            background-color: var(--white);
-            padding: 3rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-family: 'Sometype Mono', monospace;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid var(--gray-medium);
-            border-radius: 4px;
-            font-size: 1rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-        }
-
-        /* Prevent iOS zoom on input focus */
-        @media screen and (max-width: 768px) {
-            .form-control {
-                font-size: 16px;
-            }
-        }
-
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 2px solid #222;
-            border-top: 2px solid var(--white);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--black);
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 0;
-            text-align: center;
-            border-top: 1px solid var(--gray-medium);
-        }
-
-        .copyright {
-            color: var(--gray-dark);
-            font-size: 0.9rem;
-        }
-
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .fade-in.appear {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .portfolio-container {
-                grid-template-columns: 1fr;
-                gap: 5rem;
-                text-align: center;
-            }
-
-            .portfolio-info {
-                align-items: center;
-                text-align: center;
-                gap: 2rem;
-            }
-
-            .portfolio-info h3 {
-                font-size: 3rem;
-            }
-
-            .portfolio-controls {
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-
-            .hero p {
-                font-size: 1.4rem;
-            }
-
-            .hero-content {
-                padding: 3rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                height: auto;
-                min-height: 100vh;
-                padding: 4rem 0;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem;
-                letter-spacing: -1px;
-            }
-
-            .hero p {
-                font-size: 1.3rem;
-            }
-
-            .hero-content {
-                padding: 2.5rem;
-                border-radius: 24px;
-            }
-
-            .btn {
-                display: block;
-                width: 100%;
-                margin-left: 0 !important;
-                margin-bottom: 1rem;
-                text-align: center;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .frame-content {
-                height: 450px;
-            }
-
-            .frame-url {
-                font-size: 0.7rem;
-                padding: 0.4rem 0.8rem;
-            }
-
-            .portfolio-controls {
-                gap: 1.5rem;
-            }
-
-            .portfolio-arrow {
-                width: 45px;
-                height: 45px;
-            }
-
-            .portfolio-thumbnail {
-                width: 90px;
-                height: 60px;
-            }
-
-            .thumbnail-label {
-                font-size: 0.65rem;
-            }
-
-            .cta-form {
-                padding: 2rem;
-            }
-
-            section {
-                padding: 3rem 0;
-            }
-
-            .value-grid,
-            .process-grid,
-            .services-grid,
-            .testimonials {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .portfolio-info h3 {
-                font-size: 1.5rem;
-            }
-
-            .portfolio-info p {
-                font-size: 0.95rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 1.25rem;
-            }
-
-            .hero {
-                padding: 4rem 0;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-                letter-spacing: -0.5px;
-            }
-
-            .hero p {
-                font-size: 1.15rem;
-                margin-bottom: 2.5rem;
-            }
-
-            .hero-content {
-                padding: 2rem 1.75rem;
-                border-radius: 20px;
-            }
-
-            .section-title {
-                font-size: 1.75rem;
-                margin-bottom: 4rem;
-            }
-
-            .portfolio-frame {
-                width: 280px;
-                /* Force consistent phone look on small devices */
-                border-width: 10px;
-                border-radius: 34px;
-            }
-
-            .portfolio-info h3 {
-                font-size: 2rem;
-            }
-
-            .portfolio-info p {
-                font-size: 1rem;
-            }
-
-            .btn {
-                padding: 1.1rem 2rem;
-                font-size: 1rem;
-            }
-
-            .portfolio-arrow {
-                width: 50px;
-                height: 50px;
-                font-size: 1rem;
-            }
-
-            .portfolio-controls {
-                gap: 1.25rem;
-            }
-
-            .portfolio-dot {
-                width: 8px;
-                height: 8px;
-            }
-        }
-
-        .portfolio-thumbnail {
-            width: 75px;
-            height: 50px;
-        }
-
-        .thumbnail-label {
-            font-size: 0.6rem;
-            padding: 0.2rem;
-        }
-
-        .value-icon {
-            font-size: 2.5rem;
-        }
-
-        .value-card h3,
-        .process-step h3,
-        .service-card h3 {
-            font-size: 1.3rem;
-        }
-
-        .step-number {
-            font-size: 2.5rem;
-        }
-
-        .cta h2 {
-            font-size: 2rem;
-        }
-
-        .cta-form {
-            padding: 1.5rem;
-        }
-
-        .form-control {
-            padding: 0.9rem;
-            font-size: 0.95rem;
-        }
-
-        section {
-            padding: 2.5rem 0;
-        }
-
-        .scroll-hint {
-            font-size: 0.8rem;
-            padding: 0.4rem 0.8rem;
-        }
-
-        .view-site {
-            font-size: 0.9rem;
-        }
-
-        .portfolio-info h3 {
-            font-size: 1.3rem;
-        }
-
-        .portfolio-info p {
-            font-size: 0.9rem;
-        }
-        }
-
-        @media (max-width: 360px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .hero-content {
-                padding: 1.5rem;
-            }
-
-            .frame-content {
-                height: 300px;
-            }
-
-            .portfolio-thumbnail {
-                width: 65px;
-                height: 45px;
-            }
-
-            .portfolio-arrow {
-                width: 36px;
-                height: 36px;
-                font-size: 0.85rem;
-            }
-        }
-
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
-
-            .btn,
-            .portfolio-arrow,
-            .portfolio-dot,
-            .portfolio-thumbnail {
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .portfolio-arrow:active {
-                transform: scale(0.95);
-            }
-
-            .portfolio-dot:active,
-            .portfolio-thumbnail:active {
-                transform: scale(0.9);
-            }
-
-            .btn:active {
-                transform: scale(0.98);
-            }
-
-            /* Larger touch targets for mobile */
-            .portfolio-dot {
-                padding: 8px;
-                margin: -8px;
-            }
-
-            .portfolio-arrow {
-                min-width: 44px;
-                min-height: 44px;
-            }
-
-            .desktop-hint {
-                display: none;
-            }
-
-            .mobile-hint {
-                display: inline;
-            }
-        }
-
-        /* Desktop hint display */
-        @media (hover: hover) and (pointer: fine) {
-            .mobile-hint {
-                display: none;
-            }
-
-            .desktop-hint {
-                display: inline;
-            }
-        }
+        .font-script { font-family: 'Great Vibes', cursive; }
+        .font-display { font-family: 'Cinzel', serif; }
+        .transition-400 { transition-duration: 400ms; }
+        .hover\:scale-103:hover { transform: scale(1.03); }
+        .bg-opacity-3 { opacity: 0.03; }
+        .opacity-3 { opacity: 0.03; }
     </style>
 </head>
+<body class="bg-dark-bg font-sans text-brand-beige">
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="absolute top-0 left-0 right-0 z-50 transition-all duration-300 bg-dark-bg/95 backdrop-blur-md shadow-lg border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center justify-between">
+                    <!-- Left Links -->
+                    <div class="flex items-center gap-12 flex-1">
+                        <a class="text-brand-beige/80 hover:text-brand-terracotta transition-colors duration-300 text-[10px] tracking-[0.2em] font-bold cursor-pointer whitespace-nowrap uppercase" href="#portfolio">Portfolio</a>
+                        <a class="text-brand-beige/80 hover:text-brand-terracotta transition-colors duration-300 text-[10px] tracking-[0.2em] font-bold cursor-pointer whitespace-nowrap uppercase" href="#about">About</a>
+                    </div>
+                    
+                    <!-- Center Logo -->
+                    <a href="https://madamedphotography.com/" class="font-display text-brand-beige text-2xl tracking-[0.3em] font-bold cursor-pointer hover:text-brand-terracotta transition-colors uppercase px-8">MADAME-D PHOTOGRAPHY</a>
+                    
+                    <!-- Right Links -->
+                    <div class="flex items-center justify-end gap-12 flex-1">
+                        <a class="text-brand-beige/80 hover:text-brand-terracotta transition-colors duration-300 text-[10px] tracking-[0.2em] font-bold cursor-pointer whitespace-nowrap uppercase" href="#contact">Contact</a>
+                        <button class="px-8 py-2.5 bg-brand-terracotta text-brand-beige rounded-full hover:bg-white hover:text-brand-terracotta transition-all duration-300 text-[10px] font-bold tracking-[0.2em] uppercase whitespace-nowrap cursor-pointer">BOOK SESSION</button>
+                    </div>
+                </div>
 
-<body>
-    <nav>
-        <a href="#" class="logo">fotofolio</a>
-        <div class="nav-links">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#packages" class="nav-link">Packages</a>
-            <a href="#proposal" class="nav-link">Contact</a>
+                <!-- Mobile Nav Toggle -->
+                <div class="md:hidden flex items-center justify-between">
+                    <a href="https://madamedphotography.com/" class="font-display text-lg tracking-[0.2em] font-bold text-brand-beige uppercase">MADAME-D</a>
+                    <button id="mobile-menu-btn" class="flex items-center justify-center w-10 h-10 text-brand-beige cursor-pointer">
+                        <i class="ri-menu-line text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0d0510] transform translate-x-full transition-transform duration-300 md:hidden">
+            <div class="flex flex-col h-full p-8">
+                <div class="flex items-center justify-between mb-12">
+                    <span class="font-display text-2xl tracking-[0.2em] font-bold text-brand-beige uppercase">MADAME-D PHOTOGRAPHY</span>
+                    <button id="close-menu" class="w-10 h-10 flex items-center justify-center text-brand-beige cursor-pointer">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-6">
+                    <a class="text-3xl font-display text-brand-beige/90 hover:text-brand-terracotta transition-colors uppercase tracking-widest font-bold" href="#portfolio">Portfolio</a>
+                    <a class="text-3xl font-display text-brand-beige/90 hover:text-brand-terracotta transition-colors uppercase tracking-widest font-bold" href="#about">About</a>
+                    <a class="text-3xl font-display text-brand-beige/90 hover:text-brand-terracotta transition-colors uppercase tracking-widest font-bold" href="#contact">Contact</a>
+                </nav>
+                <div class="mt-auto pt-12">
+                    <button class="w-full py-4 bg-brand-terracotta text-brand-beige rounded-full text-lg tracking-[0.1em] font-bold shadow-lg mb-6 uppercase">BOOK YOUR SESSION</button>
+                    <div class="flex items-center justify-center gap-6">
+                        <a href="#" class="text-brand-beige/60 hover:text-brand-terracotta transition-colors"><i class="ri-instagram-line text-2xl"></i></a>
+                        <a href="#" class="text-brand-beige/60 hover:text-brand-terracotta transition-colors"><i class="ri-facebook-line text-2xl"></i></a>
+                        <a href="#" class="text-brand-beige/60 hover:text-brand-terracotta transition-colors"><i class="ri-mail-line text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="menu-trigger" id="menu-open">MENU</button>
-    </nav>
 
-    <!-- Mobile Overlay Navigation -->
-    <div class="mobile-overlay" id="mobile-overlay">
-        <button class="overlay-close" id="menu-close">CLOSE</button>
-        <a href="#portfolio" class="overlay-link">Portfolio</a>
-        <a href="#packages" class="overlay-link">Packages</a>
-        <a href="#proposal" class="overlay-link">Contact</a>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen w-full overflow-hidden">
+            <div class="absolute inset-0">
+                <img alt="Madame-D Photography Hero" class="w-full h-full object-cover object-center grayscale" src="images/hero.jpg">
+                <div class="absolute inset-0 bg-dark-bg/40"></div>
+                <div class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-dark-bg to-transparent"></div>
+            </div>
+            <div class="relative h-full flex flex-col items-center justify-center px-6 text-center">
+                <div class="max-w-4xl w-full">
+                    <h1 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-brand-beige tracking-[0.3em] mb-4 drop-shadow-2xl uppercase">Madame-D Photography</h1>
+                    <p class="text-brand-beige/60 text-[9px] sm:text-xs tracking-[0.4em] uppercase font-bold mb-8 md:mb-12 border-y border-white/10 py-3 md:py-4 inline-block px-8 md:px-12">Lansing</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                        <a href="#portfolio" class="w-full sm:w-auto px-10 py-4 bg-brand-terracotta text-brand-beige rounded-full text-[10px] tracking-[0.2em] font-bold hover:bg-brand-beige hover:text-brand-terracotta transition-all duration-300 shadow-xl whitespace-nowrap cursor-pointer uppercase">VIEW COLLECTIONS</a>
+                        <a href="#contact" class="w-full sm:w-auto px-10 py-4 border border-brand-beige text-brand-beige rounded-full text-[10px] tracking-[0.2em] font-bold hover:bg-brand-beige hover:text-brand-terracotta transition-all duration-300 whitespace-nowrap cursor-pointer uppercase">GET IN TOUCH</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 px-6 bg-dark-bg">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                    <div class="lg:col-span-3 relative">
+                        <p class="text-brand-terracotta text-xs tracking-[0.3em] uppercase mb-6 font-bold">THE ARTIST BEHIND THE LENS</p>
+                        <div class="relative">
+                            <h2 class="font-display text-4xl md:text-5xl text-brand-beige leading-tight mb-8 relative z-10 uppercase tracking-wider font-bold">Hi I am Darian</h2>
+                        </div>
+                        <p class="text-brand-beige/80 text-base leading-relaxed max-w-xl mb-6">Based in Lansing, my work blends cinematic style with authentic storytelling. Every session is a unique collaboration, focused on capturing the raw emotion and beauty of your story in a way that feels both powerful and elegant.</p>
+                        <p class="text-brand-beige/80 text-base leading-relaxed max-w-xl mb-8">Whether we're exploring a local landscape or a destination far away, I'm here to document the moments that matter most.</p>
+                        <p class="text-brand-terracotta text-2xl font-script italic">— Madame-D Photography</p>
+
+                    </div>
+                    <div class="lg:col-span-2 relative">
+                        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                            <img alt="Madame-D Portrait" class="w-full h-full object-cover object-center" src="images/self%20potrait.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-32 px-6 bg-dark-bg-secondary">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-brand-terracotta text-[10px] tracking-[0.4em] uppercase font-bold mb-4">CURATED COLLECTIONS</p>
+                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-beige uppercase tracking-[0.15em] md:tracking-widest">PORTFOLIO</h2>
+                    <div class="h-px w-24 bg-brand-terracotta mx-auto mt-8 mb-8"></div>
+                    <p class="text-brand-beige/60 text-lg max-w-2xl mx-auto italic">Explore the beauty of authentic connection and cinematic light.</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+                    <button class="px-8 py-2 rounded-full text-xs tracking-widest uppercase transition-all duration-300 whitespace-nowrap cursor-pointer bg-brand-terracotta text-brand-beige font-bold shadow-lg">All Works</button>
+                    <button class="px-8 py-2 rounded-full text-xs tracking-widest uppercase transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-brand-beige/60 border border-white/10 hover:border-brand-terracotta hover:text-brand-terracotta font-bold">Weddings</button>
+                    <button class="px-8 py-2 rounded-full text-xs tracking-widest uppercase transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-brand-beige/60 border border-white/10 hover:border-brand-terracotta hover:text-brand-terracotta font-bold">Portraiture</button>
+                    <button class="px-8 py-2 rounded-full text-xs tracking-widest uppercase transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-brand-beige/60 border border-white/10 hover:border-brand-terracotta hover:text-brand-terracotta font-bold">Editorial</button>
+                    <button class="px-8 py-2 rounded-full text-xs tracking-widest uppercase transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-brand-beige/60 border border-white/10 hover:border-brand-terracotta hover:text-brand-terracotta font-bold">Lifestyle</button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Portfolio Item 1 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Steampunk Ferry Adventure" class="w-full h-full object-cover object-top" src="images/protfolio-image-1.jpg">
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Dark Fantasy Portrait" class="w-full h-full object-cover object-top" src="images/protfolio-image-2.jpg">
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Victorian Dreams" class="w-full h-full object-cover object-top" src="images/protfolio-image-6.jpg">
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Madame-D Collection" class="w-full h-full object-cover object-top" src="images/protfolio-image-11.jpg">
+                    </div>
+                    <!-- Portfolio Item 5 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Editorial Elegance" class="w-full h-full object-cover object-top" src="images/protfolio-image-3.jpg">
+                    </div>
+                    <!-- Portfolio Item 6 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Mystical Realm" class="w-full h-full object-cover object-top" src="images/protfolio-image-5.jpg">
+                    </div>
+                    <!-- Portfolio Item 7 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Bold Expression" class="w-full h-full object-cover object-top" src="images/protfolio-image-7.jpg">
+                    </div>
+                    <!-- Portfolio Item 8 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Artistic Narrative" class="w-full h-full object-cover object-top" src="images/protfolio-image-8.jpg">
+                    </div>
+                    <!-- Portfolio Item 9 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Madame-D Collection" class="w-full h-full object-cover object-top" src="images/protfolio-image-9.jpg">
+                    </div>
+                    <!-- Portfolio Item 10 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Conceptual Vision" class="w-full h-full object-cover object-top" src="images/protfolio-image-4.webp">
+                    </div>
+                    <!-- Portfolio Item 11 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Madame-D Collection" class="w-full h-full object-cover object-top" src="images/protfolio-image-10.jpg">
+                    </div>
+                    <!-- Portfolio Item 12 -->
+                    <div class="group relative rounded-lg overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 border border-white/5 shadow-2xl aspect-[4/5]">
+                        <img alt="Madame-D Collection" class="w-full h-full object-cover object-top" src="images/protfolio-image-12.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-32 px-6 bg-dark-bg-secondary relative overflow-hidden">
+            <div class="max-w-7xl mx-auto relative">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <!-- Review Content -->
+                    <div class="relative z-10">
+                        <p class="text-brand-terracotta text-xs tracking-[0.4em] uppercase font-bold mb-6">CLIENT VOICES</p>
+                        <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-beige uppercase tracking-widest mb-12">UNFORGETTABLE<br>EXPERIENCES</h2>
+                        <div class="relative">
+                            <i class="ri-double-quotes-l text-brand-terracotta/20 text-8xl absolute -left-10 -top-10 leading-none pointer-events-none"></i>
+                            <p class="text-brand-beige font-serif text-2xl md:text-3xl leading-relaxed mb-12 italic tracking-wide">"I had an amazing experience with Madame-D Photography! From start to finish, everything was professional, relaxed, and incredibly well done. She has a great eye for detail and really knows how to capture natural moments that feel genuine rather than staged."</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-brand-beige font-display font-bold text-xl tracking-widest uppercase">Loyalty Barbershop</h4>
+                            <p class="text-brand-terracotta text-sm tracking-[0.2em] font-bold uppercase">Client Gallery Preview</p>
+                        </div>
+                    </div>
+                    <!-- Review Image -->
+                    <div class="relative group">
+                        <div class="absolute -inset-4 border border-brand-terracotta/20 rounded-2xl transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Madame-D Client Session" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-700" src="images/642427940_18063780836661280_2458446373795832994_n.jpg">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/60 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-32 px-6 bg-[#0d0510]">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-dark-bg-secondary p-8 md:p-12 lg:p-20 rounded-[30px] md:rounded-[40px] shadow-2xl border border-white/5">
+                    <p class="text-brand-terracotta text-xs tracking-[0.4em] uppercase mb-4 font-bold">READY TO BEGIN?</p>
+                    <h2 class="font-display text-5xl font-bold text-brand-beige leading-tight mb-6 uppercase tracking-widest">LET’S TELL YOUR STORY</h2>
+                    <p class="text-brand-beige/60 text-base mb-12 tracking-wide">Inquire about your date or luxury portrait session.</p>
+                    <form class="space-y-6">
+                        <div>
+                            <input placeholder="Full Name" required class="w-full bg-dark-bg border border-white/10 rounded-lg px-5 py-4 text-brand-beige text-base placeholder-brand-beige/20 focus:outline-none focus:ring-1 focus:ring-brand-terracotta transition-all duration-200" type="text" name="name">
+                        </div>
+                        <div>
+                            <input placeholder="Email Address" required class="w-full bg-dark-bg border border-white/10 rounded-lg px-5 py-4 text-brand-beige text-base placeholder-brand-beige/20 focus:outline-none focus:ring-1 focus:ring-brand-terracotta transition-all duration-200" type="email" name="email">
+                        </div>
+                        <div>
+                            <select name="sessionType" required class="w-full bg-dark-bg border border-white/10 rounded-lg px-5 py-4 text-brand-beige text-base focus:outline-none focus:ring-1 focus:ring-brand-terracotta transition-all duration-200 cursor-pointer appearance-none">
+                                <option value="" class="bg-dark-bg text-brand-beige/40">Select Collection Type</option>
+                                <option value="wedding" class="bg-dark-bg">Wedding & Engagement</option>
+                                <option value="portrait" class="bg-dark-bg">Luxury Portraiture</option>
+                                <option value="lifestyle" class="bg-dark-bg">Branding & Lifestyle</option>
+                                <option value="destination" class="bg-dark-bg">Destination Session</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="A little about your vision..." rows="5" required class="w-full bg-dark-bg border border-white/10 rounded-lg px-5 py-4 text-brand-beige text-base placeholder-brand-beige/20 focus:outline-none focus:ring-1 focus:ring-brand-terracotta transition-all duration-200 resize-none"></textarea>
+                        <button type="submit" class="w-full bg-brand-terracotta text-brand-beige py-5 rounded-full text-xs tracking-[0.3em] font-bold hover:bg-white hover:text-brand-terracotta transition-all duration-300 flex items-center justify-center gap-3 uppercase cursor-pointer">
+                            <span>Send Inquiry</span>
+                            <i class="ri-arrow-right-line text-xl"></i>
+                        </button>
+                    </form>
+                    <div class="mt-12 text-center">
+                        <p class="text-brand-beige/40 text-xs tracking-widest uppercase mb-4">Connect on Social</p>
+                        <div class="flex items-center justify-center gap-6">
+                            <a href="https://www.instagram.com/madamedphotography/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center text-brand-beige/60 hover:text-brand-terracotta transition-colors duration-300 cursor-pointer">
+                                <i class="ri-instagram-line text-2xl"></i>
+                            </a>
+                            <a href="mailto:hello@madamedphotography.com" class="w-12 h-12 flex items-center justify-center text-brand-beige/60 hover:text-brand-terracotta transition-colors duration-300 cursor-pointer">
+                                <i class="ri-mail-line text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark-bg border-t border-white/5 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20 text-center md:text-left">
+                    <div class="flex flex-col items-center md:items-start">
+                        <h5 class="text-brand-beige text-lg font-bold tracking-widest uppercase mb-2">Let’s Chat</h5>
+                        <p class="text-brand-beige/40 text-xs tracking-widest uppercase font-bold">Every great project starts with a conversation.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <h4 class="text-brand-terracotta text-xs uppercase tracking-[0.3em] mb-8 font-bold">THE STUDIO</h4>
+                        <div class="space-y-4">
+                            <a class="block text-brand-beige/60 hover:text-brand-beige transition-colors duration-300 text-xs font-bold tracking-widest uppercase cursor-pointer" href="#portfolio">Our Work</a>
+                            <a class="block text-brand-beige/60 hover:text-brand-beige transition-colors duration-300 text-xs font-bold tracking-widest uppercase cursor-pointer" href="#about">About</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <h4 class="text-brand-terracotta text-xs uppercase tracking-[0.3em] mb-8 font-bold">SOCIALS</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-brand-beige/60 hover:bg-brand-terracotta hover:border-brand-terracotta hover:text-brand-beige transition-all duration-300 cursor-pointer">
+                                <i class="ri-instagram-line text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-brand-beige/60 hover:bg-brand-terracotta hover:border-brand-terracotta hover:text-brand-beige transition-all duration-300 cursor-pointer">
+                                <i class="ri-pinterest-line text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-white/5 pt-10">
+                    <div class="flex flex-col items-center justify-center gap-6">
+                        <p class="text-brand-beige/20 text-[10px] tracking-widest uppercase font-bold text-center">© 2026 Madame-D Photography. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-animation-container">
-            <div class="morphing-shapes">
-                <div class="morph-shape"></div>
-                <div class="morph-shape"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="hero-content fade-in">
-                <h1>Websites that book more clients for photographers</h1>
-                <p>Convert viewers into lifelong clients with high-end digital experiences tailored for visual
-                    storytellers and photography studios.
-                </p>
-                <div class="hero-btns">
-                    <a href="#proposal" class="btn">Get your free preview</a>
-                    <a href="#portfolio" class="btn"
-                        style="background-color: transparent; color: var(--white); border: 1px solid var(--white);">View
-                        Showcase</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Value Proposition Section -->
-    <section class="value-props">
-        <div class="container">
-            <h2 class="section-title">Elevating Your Digital Presence</h2>
-            <div class="value-grid">
-                <div class="value-card fade-in">
-                    <span class="mono"
-                        style="color: var(--gray-dark); margin-bottom: 2rem; display: block;">Sophistication</span>
-                    <h3>Editorial Grade Design</h3>
-                    <p>Websites that look like they belong in a high-end fashion magazine, matching the quality of your
-                        photography.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="mono"
-                        style="color: var(--gray-dark); margin-bottom: 2rem; display: block;">Performance</span>
-                    <h3>Swift Loading</h3>
-                    <p>Optimized image delivery so your portfolio loads instantly without sacrificing a single pixel of
-                        quality.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="mono"
-                        style="color: var(--gray-dark); margin-bottom: 2rem; display: block;">Conversion</span>
-                    <h3>Strategic Booking</h3>
-                    <p>Custom-built funnels designed specifically to turn "just browsing" into confirmed bookings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Showcase -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Selected Works</h2>
-            <div class="portfolio-container">
-                <div class="portfolio-info">
-                    <h3 id="project-name">The Minimalist Collective</h3>
-                    <div>
-                        <span class="mono" style="color: var(--black); font-weight: 700;">The Challenge</span>
-                        <p id="project-challenge">Creating a digital space that feels as quiet and powerful as
-                            architectural photography.</p>
-                    </div>
-                    <div>
-                        <span class="mono" style="color: var(--black); font-weight: 700;">The Solution</span>
-                        <p id="project-solution">A monochrome palette and generous white space to let the visual assets
-                            speak for themselves.</p>
-                    </div>
-
-                    <div class="portfolio-controls">
-                        <button class="portfolio-arrow" id="prev-btn">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
-                        <div class="portfolio-nav" id="portfolio-nav">
-                            <!-- Dots generated by JS -->
-                        </div>
-                        <button class="portfolio-arrow" id="next-btn">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="portfolio-frame">
-                    <div class="frame-content">
-                        <div class="iframe-overlay" id="iframe-overlay">
-                            <div class="loading-spinner"></div>
-                        </div>
-                        <iframe class="website-iframe" id="iframe-0"
-                            data-src="https://artistry-by-ariel.pages.dev/"></iframe>
-                        <iframe class="website-iframe" id="iframe-1" data-src="https://madame-d-photography.pages.dev/"></iframe>
-                        <iframe class="website-iframe" id="iframe-2" data-src="https://lg-preview.pages.dev/"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Process -->
-    <section class="process">
-        <div class="container">
-            <h2 class="section-title">The fotofolio Method</h2>
-            <div class="process-grid">
-                <div class="process-step fade-in">
-                    <span class="step-number">01</span>
-                    <h3>Aesthetic Discovery</h3>
-                    <p>We analyze your photography style—lighting, mood, and composition—to ensure your website is an
-                        extension of your lens.</p>
-                </div>
-                <div class="process-step fade-in">
-                    <span class="step-number">02</span>
-                    <h3>Editorial Build</h3>
-                    <p>Your site is hand-crafted with high-end typography and smooth transitions that reflect an
-                        expensive editorial feel.</p>
-                </div>
-                <div class="process-step fade-in">
-                    <span class="step-number">03</span>
-                    <h3>Client Conversion</h3>
-                    <p>We integrate booking systems and lead magnets that simplify the path from first click to deposit
-                        paid.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Packages Section -->
-    <section id="packages" class="packages">
-        <div class="container">
-            <h2 class="section-title">Price Tiers</h2>
-            <div class="packages-grid">
-                <!-- Tier 1 -->
-                <div class="package-card fade-in">
-                    <span class="package-name">Essential</span>
-                    <div class="package-price">$350</div>
-                    <ul class="package-features">
-                        <li>Custom Single-Page Website</li>
-                        <li>Mobile-Responsive Design</li>
-                        <li>Contact Form Integration</li>
-                        <li>Image Optimization</li>
-                        <li>Basic SEO Setup</li>
-                    </ul>
-                    <a href="#proposal" class="btn">Get your preview</a>
-                </div>
-                <!-- Tier 2 -->
-                <div class="package-card fade-in"
-                    style="border-color: var(--black); transform: scale(1.05); background: #fdfdfd;">
-                    <span class="package-name">Professional</span>
-                    <div class="package-price">$650</div>
-                    <ul class="package-features">
-                        <li>Everything in Essential</li>
-                        <li>Up to 5 Portfolio Pages</li>
-                        <li>Gallery Sections per Category</li>
-                        <li>Booking/Inquiry Integration</li>
-                        <li>Custom Animations</li>
-                    </ul>
-                    <a href="#proposal" class="btn">Get your preview</a>
-                </div>
-                <!-- Tier 3 -->
-                <div class="package-card fade-in">
-                    <span class="package-name">Elite</span>
-                    <div class="package-price">$1,000+</div>
-                    <ul class="package-features">
-                        <li>Everything in Professional</li>
-                        <li>Unlimited Pages</li>
-                        <li>E-commerce / Print Shop</li>
-                        <li>Priority Timeline</li>
-                        <li>3 Months of Updates & Support</li>
-                    </ul>
-                    <a href="#proposal" class="btn">Get your preview</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Final CTA Section -->
-    <section id="proposal" class="cta">
-        <div class="container">
-            <h2 class="section-title">Get your free preview</h2>
-            <div class="cta-form fade-in">
-                <form id="proposal-form" action="https://formspree.io/f/xrekvkkp" method="POST">
-                    <input type="text" name="_honey" style="display:none">
-                    <div id="form-status"
-                        style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; font-family: 'Inter', sans-serif; font-weight: 600;">
-                    </div>
-                    <div class="form-group">
-                        <label for="name" class="mono">Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="mono">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required
-                            placeholder="Your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="project" class="mono">Project Description</label>
-                        <textarea id="project" name="message" class="form-control"
-                            placeholder="Tell us about your photography style..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Get your preview</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="background: var(--black); color: var(--white); padding: 8rem 0; text-align: center;">
-        <div class="container">
-            <div class="footer-logo"
-                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 2rem;">fotofolio</div>
-            <p class="copyright"
-                style="color: rgba(255, 255, 255, 0.4); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">
-                © 2026 fotofolio. All rights reserved.</p>
-        </div>
-    </footer>
-
     <script>
-        const portfolioItems = [
-            {
-                name: "Artistry By Ariel",
-                challenge: "Establishing a luxury digital presence that mirrors high-end portrait artistry.",
-                solution: "A warm, sophisticated deep-palette theme with seamless cinematic storytelling.",
-                link: "https://artistry-by-ariel.pages.dev/",
-                thumbnail: "ariel.png"
-            },
-            {
-                name: "Madame-D Photography",
-                challenge: "Capturing the raw emotion and beauty of authentic storytelling through a cinematic and editorial lens.",
-                solution: "A luxury digital showcase that blends powerful elegance with cinematic light and curated editorial narratives.",
-                link: "https://madame-d-photography.pages.dev/",
-                thumbnail: "madame-d.png"
-            },
-            {
-                name: "LG Photography MB",
-                challenge: "Conveying the 'gentle artistry' and 'timeless warmth' of Manitoba-based wedding and family photography.",
-                solution: "A soft, elegant digital showcase featuring generous white space, curated editorial grids, and emotionally resonant typography.",
-                link: "https://lg-preview.pages.dev/",
-                thumbnail: "lg.png"
-            }
-        ];
-
-        let currentPortfolioIndex = 0;
-        let loadedIframes = new Set();
-
-        const frameUrl = document.getElementById('frame-url');
-        const projectName = document.getElementById('project-name');
-        const projectChallenge = document.getElementById('project-challenge');
-        const projectSolution = document.getElementById('project-solution');
-        const portfolioNav = document.getElementById('portfolio-nav');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const iframeOverlay = document.getElementById('iframe-overlay');
-
-        portfolioItems.forEach((item, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'portfolio-dot';
-            if (index === 0) dot.classList.add('active');
-            dot.setAttribute('data-index', index);
-            dot.addEventListener('click', () => updatePortfolio(index));
-            if (portfolioNav) portfolioNav.appendChild(dot);
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
         });
-
-        function loadIframe(index) {
-            const iframe = document.getElementById(`iframe-${index}`);
-            if (!iframe) return;
-            if (loadedIframes.has(index)) {
-                document.querySelectorAll('.website-iframe').forEach(f => f.classList.remove('active'));
-                iframe.classList.add('active');
-                return;
-            }
-            const src = iframe.getAttribute('data-src');
-            if (iframeOverlay) iframeOverlay.classList.remove('hidden');
-            iframe.src = src;
-            iframe.onload = () => {
-                loadedIframes.add(index);
-                setTimeout(() => { if (iframeOverlay) iframeOverlay.classList.add('hidden'); }, 500);
-            };
-            setTimeout(() => { if (iframeOverlay) iframeOverlay.classList.add('hidden'); }, 3000);
-        }
-
-        function updatePortfolio(index) {
-            const item = portfolioItems[index];
-            if (!item) return;
-            if (projectName) projectName.textContent = item.name;
-            if (projectChallenge) projectChallenge.textContent = item.challenge;
-            if (projectSolution) projectSolution.textContent = item.solution;
-            if (frameUrl) frameUrl.textContent = item.link;
-
-            document.querySelectorAll('.website-iframe').forEach(iframe => iframe.classList.remove('active'));
-            const activeIframe = document.getElementById(`iframe-${index}`);
-            if (activeIframe) activeIframe.classList.add('active');
-
-            loadIframe(index);
-
-            document.querySelectorAll('.portfolio-dot').forEach(dot => dot.classList.remove('active'));
-            let activeDot = portfolioNav.querySelector(`[data-index="${index}"]`);
-            if (activeDot) activeDot.classList.add('active');
-
-            prevBtn.disabled = index === 0;
-            nextBtn.disabled = index === portfolioItems.length - 1;
-            currentPortfolioIndex = index;
-        }
-
-        if (prevBtn) prevBtn.addEventListener('click', () => { if (currentPortfolioIndex > 0) updatePortfolio(currentPortfolioIndex - 1); });
-        if (nextBtn) nextBtn.addEventListener('click', () => { if (currentPortfolioIndex < portfolioItems.length - 1) updatePortfolio(currentPortfolioIndex + 1); });
-
-        // Touch/Swipe
-        let touchStartX = 0;
-        let touchEndX = 0;
-        const portfolioFrame = document.querySelector('.portfolio-frame');
-        if (portfolioFrame) {
-            portfolioFrame.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
-            portfolioFrame.addEventListener('touchend', (e) => { touchEndX = e.changedTouches[0].screenX; handleSwipe(); }, { passive: true });
-        }
-
-        function handleSwipe() {
-            const diff = touchStartX - touchEndX;
-            if (Math.abs(diff) > 50) {
-                if (diff > 0 && currentPortfolioIndex < portfolioItems.length - 1) updatePortfolio(currentPortfolioIndex + 1);
-                else if (diff < 0 && currentPortfolioIndex > 0) updatePortfolio(currentPortfolioIndex - 1);
-            }
-        }
-
-        updatePortfolio(0);
 
         // Mobile Menu Logic
-        const menuOpen = document.getElementById('menu-open');
-        const menuClose = document.getElementById('menu-close');
-        const mobileOverlay = document.getElementById('mobile-overlay');
-        const overlayLinks = document.querySelectorAll('.overlay-link');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('nav a, button');
 
-        if (menuOpen && mobileOverlay) {
-            menuOpen.addEventListener('click', () => {
-                mobileOverlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('overflow-hidden');
         }
 
-        if (menuClose && mobileOverlay) {
-            menuClose.addEventListener('click', () => {
-                mobileOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        }
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
 
-        overlayLinks.forEach(link => {
+        mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileOverlay.classList.remove('active');
-                document.body.style.overflow = '';
+                mobileMenu.classList.add('translate-x-full');
+                document.body.classList.remove('overflow-hidden');
             });
         });
 
-        // Form
-        const proposalForm = document.getElementById('proposal-form');
-        const formStatus = document.getElementById('form-status');
-        const submitBtn = proposalForm ? proposalForm.querySelector('button[type="submit"]') : null;
-
-        if (proposalForm) {
-            proposalForm.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-                try {
-                    const response = await fetch(proposalForm.action, { method: 'POST', body: new FormData(proposalForm), headers: { 'Accept': 'application/json' } });
-                    if (response.ok) {
-                        formStatus.textContent = '✓ Preview request sent! I\'ll get back to you soon.';
-                        formStatus.style.cssText = 'display: block; background: #f0f0f0; color: #000; padding: 1rem; margin-bottom: 2rem;';
-                        proposalForm.reset();
-                    } else { throw new Error(); }
-                } catch (error) {
-                    formStatus.textContent = '✗ Something went wrong. Please try again.';
-                    formStatus.style.cssText = 'display: block; background: #fee; color: #a00; padding: 1rem; margin-bottom: 2rem;';
-                } finally {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Get your preview';
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
-        }
-
-        // Scroll animations
-        const fadeElements = document.querySelectorAll('.fade-in');
-        function checkScroll() {
-            fadeElements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) element.classList.add('appear');
-            });
-        }
-        window.addEventListener('scroll', checkScroll);
-        checkScroll();
+        });
     </script>
 </body>
-
 </html>
